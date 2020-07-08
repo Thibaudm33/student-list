@@ -31,14 +31,14 @@ services:
 
   build-image:
     build:
-      context: ./simple-api/
+      context: ./simple_api/
       dockerfile: Dockerfile
     volumes:
       - ./student_age.json:/data/student_age.json
     networks:
       - student
 
-Networks:
+networks:
   student:
     name: student
     
