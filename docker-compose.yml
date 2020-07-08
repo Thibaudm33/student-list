@@ -31,8 +31,8 @@ services:
 
   build-image:
     build:
-	context: ./simple-api/
-	dockerfile: Dockerfile
+      context: ./simple-api/
+      dockerfile: Dockerfile
     volumes:
       - ./student_age.json:/data/student_age.json
     networks:
