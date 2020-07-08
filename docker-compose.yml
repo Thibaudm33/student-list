@@ -26,17 +26,6 @@ services:
       - 4000:5000
     networks:
       - student
-    depends_on:
-      - build-image
-
-  build-image:
-    build:
-      context: ./simple_api/
-      dockerfile: Dockerfile
-    volumes:
-      - ./student_age.json:/data/student_age.json
-    networks:
-      - student
 
 networks:
   student:
